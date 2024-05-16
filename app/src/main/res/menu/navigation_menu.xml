@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/AlreadyReadFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_already_read"
+        android:title="Already Read"/>
+    <item
+        android:id="@id/LibraryFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_library"
+        android:title="Library"/>
+    <item
+        android:id="@id/ReadLaterFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_read_later"
+        android:title="Read Later"/>
+
+</menu>

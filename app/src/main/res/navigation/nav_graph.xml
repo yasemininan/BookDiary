@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/LibraryFragment">
+
+    <fragment
+        android:id="@+id/LibraryFragment"
+        android:name="com.example.bookdiary.ui.LibraryFragment"
+        android:label="Menu"
+        tools:layout="@layout/fragment_library">
+        <action
+            android:id="@+id/action_LibraryFragment_to_BookFragment"
+            app:destination="@id/BookFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/BookFragment"
+        android:name="com.example.bookdiary.ui.BookFragment"
+        android:label="Book Description"
+        tools:layout="@layout/fragment_book">
+        <argument
+            android:name="bookId"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/ReadLaterFragment"
+        android:name="com.example.bookdiary.ui.ReadLaterFragment"
+        android:label="Saved Books"
+        tools:layout="@layout/fragment_read_later">
+        <action
+            android:id="@+id/action_ReadLaterFragment_to_BookFragment"
+            app:destination="@id/BookFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/AlreadyReadFragment"
+        android:name="com.example.bookdiary.ui.AlreadyReadFragment"
+        android:label="Already Read"
+        tools:layout="@layout/fragment_already_read">
+        <action
+            android:id="@+id/action_AlreadyReadFragment_to_BookFragment"
+            app:destination="@id/BookFragment" />
+    </fragment>
+</navigation>

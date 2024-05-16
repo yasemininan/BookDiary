@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="8dp"
+    android:layout_marginVertical="16dp">
+
+    <ImageView
+        android:id="@+id/imageViewBookImage"
+        android:layout_width="120dp"
+        android:layout_height="200dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/alchemist"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/bookName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:text="The Shawshank Redemption"
+            android:textStyle="bold"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/writer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:text="Frank Darabont"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/checkOne"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/ic_check_outline" />
+
+            <Button
+                android:id="@+id/checkTwo"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/ic_check_outline" />
+
+            <Button
+                android:id="@+id/checkThree"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/ic_check_outline" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
